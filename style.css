@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+
+body {
+    background-color: #EEF9BF;
+}
+.titulo {
+    width: 100%;
+    height: 63px;
+    margin-bottom: 9px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #75B79E;
+}
+.baralho {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.baralho .card {
+    margin: 17px;
+}
+.baralho .card .atras {
+    width: 117px;
+    height: 146px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+}
+.baralho .card .atras img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 335px) {
+    .titulo {
+        width: 312px;
+    }
+    .baralho {
+        width: 300px;
+    }
+}
