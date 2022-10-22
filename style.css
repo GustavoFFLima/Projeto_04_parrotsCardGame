@@ -58,22 +58,28 @@ body {
     width: 100px;
     height: 100px;
 }
-
-.baralho .card .atras img {
-    width: 100px;
-    height: 100px;
+.baralho .card .atras {
+    background-image: url('src/Arquivos Úteis - Projeto 04 - Parrot Card Game/back.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.baralho .card .frente {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .frente {
     transform: rotateY(180deg);
-  }
-
+}
 .card:hover .frente {
     transform: rotateY(0deg);
-  }
-
+}
 .card:hover .atras {
     transform: rotateY(-180deg);
-  }
+}
+
+
 
 @media (max-width: 335px) {
     .titulo {
