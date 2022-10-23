@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transform-style: preserve-3d;
 }
 .baralho .card {
     margin: 17px;
@@ -34,11 +35,11 @@ body {
     width: 117px;
     height: 146px;
     position: relative;
+    transform-style: preserve-3d;
 }
 .carta {
     position: absolute;
-    backface-visibility: hidden;
-    transition: all .5s;
+    transition: all 400ms ease;
     transform-style: preserve-3d;
 }
 .baralho .card .atras, .baralho .card .frente {
@@ -52,31 +53,27 @@ body {
     background: #A7E9AF;
     border: 1px solid #99CEA8;
     border-radius: 5px;
-}
-
-.baralho .card .frente img {
-    width: 100px;
-    height: 100px;
+    transform-style: preserve-3d;
 }
 .baralho .card .atras {
     background-image: url('src/Arquivos Úteis - Projeto 04 - Parrot Card Game/back.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 .baralho .card .frente {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.frente {
-    transform: rotateY(180deg);
-}
-.card:hover .frente {
+
+.revelarCartaFrente {
     transform: rotateY(0deg);
 }
-.card:hover .atras {
-    transform: rotateY(-180deg);
+.revelarCartaAtras {
+    transform: rotateY(180deg);
 }
 
 
